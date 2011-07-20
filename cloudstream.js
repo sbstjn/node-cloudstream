@@ -26,7 +26,7 @@ exports.limit = function(limit, callback) {
         var resp = []
           , error = null;
         
-        if (stdout.substr(0, 1) == ']') { 
+        if (stdout.substr(0, 1) == '[') { 
             resp = JSON.parse(stdout);
         } else {
             error = stdout;
